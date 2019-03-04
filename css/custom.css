@@ -2443,7 +2443,7 @@ input.bad_bid{
 }
 
 
-@media only screen and (min-width: 1285px) and (min-width: 34em){
+@media only screen and (min-width: 1285px){
     #home2 #home2-categories::before {
         width: 80% !important;
     }
