@@ -1840,6 +1840,10 @@ hr.spaced{
 
 }
 
+main #home{
+    padding-bottom: 0 !important;
+}
+
 .mobile-welcome-sentence1-wrapper p{
     font-size: 1.6em !important;
 }
