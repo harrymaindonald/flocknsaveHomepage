@@ -487,7 +487,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #home2 #home2-categories {
     height: 620px;
    
-    background-image: url('/imgs/fistpump.png');
+    background-image: url('../imgs/fistpump.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -1772,7 +1772,7 @@ hr.spaced{
 
 #home #mainImage{
     /*max-height: 699px !important;*/
-    background-image: url('/imgs/Landing-Main.png') !important;
+    background-image: url('../imgs/Landing-Main.png') !important;
     background-attachment: scroll !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
@@ -1821,7 +1821,7 @@ hr.spaced{
 
 #landingImage {
     position: relative;
-    background-image: url('/imgs/Landing-Main.png');
+    background-image: url('../imgs/Landing-Main.png');
     height: 600px;
     background-attachment: scroll !important;
     background-repeat: no-repeat !important;
