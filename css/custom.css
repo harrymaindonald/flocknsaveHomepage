@@ -542,7 +542,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #home3{
   /*  height: calc(100vh - (4.5em + 37px)); */
     height: 100%;
-    background-image: url('/imgs/fistpump7.png');
+    background-image: url('../imgs/fistpump7.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
