@@ -546,6 +546,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
     
 
