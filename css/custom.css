@@ -610,7 +610,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
 
 .fas {
-    color: #3e3e3e !important;
+    color: #1c1c1c !important;
 }
 
 .buyers-hovered ul, .supplier-hovered ul {
@@ -2509,7 +2509,7 @@ input.bad_bid{
 
      .categories .category {
          flex-basis: 30%;
-         margin-top: 10px;
+         margin-top#1c1c1c: 10px;
      }
 
 
