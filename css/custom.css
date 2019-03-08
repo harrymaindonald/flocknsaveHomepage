@@ -511,6 +511,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 .categories .category {
     padding: 10px;
     cursor: pointer;
+    border-bottom: 1px solid transparent;
     
 }
 
@@ -525,7 +526,6 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 .category p {
     color: #003b4e;
     text-align: center;
-    font-weight: 700;
     font-size: 20px !important;
  
 }
@@ -2509,7 +2509,7 @@ input.bad_bid{
 
      .categories .category {
          flex-basis: 30%;
-         margin-top#1c1c1c: 10px;
+         margin-top: 10px;
      }
 
 
