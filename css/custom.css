@@ -453,7 +453,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #firstMessage {
     text-align: center;
     color: #87C771;
-    padding: 40px 0;
+    padding: 70px 0;
    
 }
 
@@ -480,6 +480,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
 
 #home2 {
+    background-color: #FCFCFC !important;
     min-height: auto !important;
     padding-bottom: 0 !important;
 }
@@ -495,14 +496,6 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
    
 }
 
-#home2 #home2-categories::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    max-width: 1280px;
-    height: 620px;
-    background: rgba(204, 204, 204, 0.5);
-}
 
 #firstMessage .categories {
     display: flex;
@@ -542,7 +535,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #home3{
   /*  height: calc(100vh - (4.5em + 37px)); */
     height: 100%;
-    background-image: url('../imgs/fistpump7.png');
+    background-image: url('../imgs/fistpump9.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -565,13 +558,17 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     flex-direction: row;
     justify-content: space-around;
     padding: 50px;
+   
+}
+
+.suppliers-info {
     margin-bottom: 50px;
 }
 
 
 .info {
     flex-basis: 40%;
-    color: #3e3e3e;
+    color: #000000;
     font-size:18px;
 }
 
@@ -585,11 +582,6 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     height: 60px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 5px dashed rgba(81, 130, 65, 0.5);
-    -webkit-transform:
-        translateY(20px)
-        translateX(5px)
-        rotate(-18deg);
     text-align: center;
     color: #518241;
 }
@@ -607,8 +599,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-transform: translateY(20px) translateX(5px) rotate(4deg);
-    margin-top: -175px;
+  
 }
 
 .flocknsave-info2 {
@@ -1785,7 +1776,7 @@ hr.spaced{
     background-attachment: scroll !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
-    
+    height: 800px !important;
     margin-top: 4.5em !important;
     opacity: 0.95;
     
@@ -2531,6 +2522,7 @@ input.bad_bid{
      .buyers-info, .suppliers-info {
          flex-direction: column;
          padding: 30px;
+         margin-bottom: 50px;
      }
 
      .buyers-info i, .suppliers-info i{
