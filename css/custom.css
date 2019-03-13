@@ -370,8 +370,9 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     width: 320px !important;
     height: auto !important;
     margin: auto !important;
+    margin-right: 10% !important;
     top: 30px !important;
-    right: 30px !important;
+    right: 0px !important;
     padding: 30px 30px 25px 30px !important;
     background-color: rgba(51, 104, 122, 0.7) !important;
     border: 1px solid rgba(135, 199, 113, 0.4);
@@ -453,7 +454,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #firstMessage {
     text-align: center;
     color: #87C771;
-    padding: 70px 0;
+    padding: 70px 10%;
    
 }
 
@@ -505,7 +506,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 50px 100px 0px 100px;
+    margin: 50px 0px;
 }
 
 .categories .category {
@@ -521,7 +522,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
 
 .category img {
-    max-height: 150px;
+   max-height: 128px;
 }
 .category p {
     color: #003b4e;
@@ -541,8 +542,22 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    padding: 0px 10%;
     
 
+}
+
+#recycleLogo{
+    text-align: center;
+    font-size: 3em;
+    margin-top: -239px;
+    margin-bottom: 140px;
+    color: rgb(146,208,80);
+    font-weight: 600;
+    -webkit-transform: translateY(20px)
+ translateX(5px)
+ rotate(-18deg); 
+ text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 
@@ -557,7 +572,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 50px;
+    padding: 50px 0px;
    
 }
 
@@ -573,8 +588,15 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
 
 .info h2{
-    color: #518241;
-    
+    color: rgb(146,208,80);;
+    font-size: 2em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#infoSupplier{
+    color: #147398;
 }
 
 .flocknsave-line {
@@ -1638,7 +1660,10 @@ border-color: #4CAF50;
 main{
     max-width: 1280px;
 }
-
+#zz{
+    width: 100% !important;
+    max-width: 100% !important;
+}
 .ghostBox.shrink{
     height: 0.01em !important;
     padding: 0;
@@ -1771,12 +1796,11 @@ hr.spaced{
 }
 
 #home #mainImage{
-    /*max-height: 699px !important;*/
-    background-image: url('../imgs/Landing-Main.png') !important;
+  /*   max-height: 699px !important; */
+    background-image: url('../imgs/home_handshake.jpg') !important;
     background-attachment: scroll !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50% !important;
-    height: 800px !important;
     margin-top: 4.5em !important;
     opacity: 0.95;
     
@@ -1807,8 +1831,11 @@ hr.spaced{
     font-size: 1.5em;
     margin-top: 16em;
     padding: 2em 3em 2em 2em;
+    padding-left: 10%;
     color: white;
-    border: 1px solid rgba(135, 199, 113, 0.4);
+    border-top: 1px solid rgba(135, 199, 113, 0.4);
+    border-bottom: 1px solid rgba(135, 199, 113, 0.4);
+    border-right: 1px solid rgba(135, 199, 113, 0.4);
 
 }
  #slogan b{
@@ -1821,7 +1848,7 @@ hr.spaced{
 
 #landingImage {
     position: relative;
-    background-image: url('../imgs/Landing-Main.png');
+    background-image: url('../imgs/home_handshake.jpg');
     height: 600px;
     background-attachment: scroll !important;
     background-repeat: no-repeat !important;
@@ -2450,6 +2477,23 @@ input.bad_bid{
     #home2 #home2-categories::before {
         width: 80% !important;
     }
+
+    body header #nav {
+        padding-right: 10% !important;
+    }
+
+    body header #nav li {
+        flex: none !important;
+        -webkit-flex: none !important;
+        margin-right: 40px !important;
+    }
+
+    body header #logo {
+        text-align: left !important;
+        left: 0 !important;
+        padding-left: 10% !important;
+    }
+
  
  }
  
@@ -2464,10 +2508,7 @@ input.bad_bid{
          margin: 50px 70px ;
      }
 
-     .category img {
-         max-height: 150px !important;
      
-     }
 
      .categories .category {
         padding: 10px;
@@ -2488,6 +2529,7 @@ input.bad_bid{
 
      #firstMessage{
          margin: 0px 10px !important;
+         padding: 70px 0px !important;
      }
 
      #firstMessage p:nth-child(1){
@@ -2530,7 +2572,7 @@ input.bad_bid{
         font-size: 6em !important;
     }
 
-    .flocknsave-line, .flocknsave-info1 img {
+    .flocknsave-line, .flocknsave-info1 img, #recycleLogo {
         display:none;
     }
 
