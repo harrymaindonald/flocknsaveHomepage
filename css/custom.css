@@ -650,6 +650,11 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #buyerInfo, #supplierInfo, .request-trial-access{
     width: 33%;
  }
+
+ #supplierInfo{
+    text-align: end;
+ }
+
 .fade-animation {
     animation: appearSlow 1s 1;
 }
