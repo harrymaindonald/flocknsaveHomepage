@@ -2700,7 +2700,7 @@ input.bad_bid{
     }
 
     .icon-column{
-        text-align: center;
+        text-align: center !important;
     }
  }
 
