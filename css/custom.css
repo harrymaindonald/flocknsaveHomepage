@@ -644,7 +644,11 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 .flocknsave-info2 {
     text-align: center;
     font-size: 2em;
-    margin-bottom:50px;
+    padding-bottom:50px;
+}
+
+.flocknsave-info2 p{
+    margin-bottom: 0;
 }
 
 .ic-mobile{
