@@ -2785,4 +2785,7 @@ input.bad_bid{
     .third-line{
         justify-content: center !important;
     }
+    .icon-column{
+        text-align: center !important;
+    }
  }
