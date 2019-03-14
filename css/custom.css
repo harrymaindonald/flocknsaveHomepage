@@ -431,7 +431,14 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 #quickReg{
     text-align: center !important;
     margin-top: 5px;
+    color:white;
    
+}
+#quickReg p{
+    display: inline;
+    position: absolute;
+    lefT: 30px;
+    bottom: 16px;
 }
 
 #register-section1-button2 {
