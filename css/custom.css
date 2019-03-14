@@ -560,6 +560,22 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
 }
 
+.info-title-line{
+    display:flex;
+    align-items: baseline;
+}
+
+.info-title-line .see-more{
+    margin-left: 20px;
+    background: #318217;
+    padding: 7px 10px;
+    border-radius: 50%;
+
+}
+
+.info-title-line .see-more i{
+    color:white !important;
+}
 
 
 .flocknsave-info1{
@@ -582,13 +598,14 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 
 
 .info {
-    flex-basis: 40%;
+    flex-basis: 50%;
     color: #000000;
     font-size:18px;
 }
 
+
 .info h2{
-    color: rgb(146,208,80);;
+    color: #318217;
     font-size: 2em;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     0px 8px 13px rgba(0,0,0,0.1),
@@ -625,10 +642,17 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
 
 .flocknsave-info2 {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom:50px;
+}
+
+.ic-mobile{
+    display: none;
+}
+
+.ic-rest{
+    display:block;
 }
 
 .fas {
@@ -641,19 +665,67 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     font-size: 24px;
 }
 
+.buyers-info .info p {
+    text-align: end;
+
+}
+
+.buyers-info .third-line{
+    justify-content: flex-end;
+}
+
 .buyers-hovered {
-    color: #518241;
-    visibility: hidden;
+    color: #318217;
+    display: hidden;
     opacity: 0;
     
 }
-#buyerInfo, #supplierInfo, .request-trial-access{
-    width: 33%;
+
+
+.icon-column{
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+ #buyerInfo{
+    position: absolute;
+    right: 10%;    
+}
+
+ #buyerTitle{
+     justify-content: flex-end;
+ }
+
+ .third-line{
+     display:flex;
  }
 
  #supplierInfo{
-    text-align: end;
+    position: absolute;
+    top: 450px;
  }
+
+ .suppliers-info .info .info-title-line .see-more{
+     background-color: #147398;
+    
+ }
+
+ .suppliers-info .info .info-title-line .see-more i{
+    color: white !important;
+}
+
+.buyers-info .info .third-line button{
+    background-color: #318217 !important;
+    border:none;
+    color: white !important;
+}
+
+.suppliers-info .info .third-line button{
+    color: white !important;
+    background-color:  #147398 !important;
+    border:none;
+    
+}
 
 .fade-animation {
     animation: appearSlow 1s 1;
@@ -719,66 +791,9 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 
 .supplier-hovered {
     color:#33687A;
-    visibility: hidden;
+    display: hidden;
     opacity: 0;
 }
-
-.request-trial-access {
-    text-align: center;
-}
-
-.request-trial-access h2{
-    margin-top: 0;
-    color: #518241;
- 
-}
-
-.request-trial-access a{
-    padding: 10px 30px;
-    margin: 10px;
-    border: 2px solid black;
-    display:inline-block;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.request-trial-access p {
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 20px;
-}
-
-.request-trial-access a:hover{
-    text-decoration: none;
-}
-
-
-
-#buyerTrial{
-    background: #87C771;
-    color:black;
-    cursor: pointer;
-}
-
-#supplierTrial{
-    background: #33687A;
-    color:white;
-    cursor: pointer;
-}
-
-#buyerTrial:hover{
-    transition: 1s;
-    background: #b3d8a6;
-    text-decoration: underline;
-}
-
-
-#supplierTrial:hover{
-    transition: 1s;
-    background: #578594;
-    text-decoration: underline;
-}
-
 
 
 .newtabs {
@@ -2510,10 +2525,33 @@ input.bad_bid{
 
      #firstMessage .categories {
          flex-wrap: wrap;
-         margin: 50px 70px ;
      }
 
-     
+
+     .info{
+         font-size:inherit;
+     }
+
+     .fa-10x{
+         font-size: 8em !important;
+     }
+
+     .buyers-info .icon-column{
+        text-align: left;
+     }
+
+     .suppliers-info .icon-column{
+         text-align: end;
+     }
+
+     .flocknsave-info1 img {
+         max-width: 250px;
+     }
+
+     #recycleLogo{
+         font-size: 2.7em;
+        margin-top: -184px;
+     }
 
      .categories .category {
         padding: 10px;
@@ -2521,6 +2559,16 @@ input.bad_bid{
         
         text-align: center;
     }
+ }
+
+ @media only screen and (max-width: 980px){
+     .flocknsave-info1 img{
+         visibility: hidden;
+     }
+
+     #recycleLogo{
+        visibility: hidden;
+     }
  }
  
  @media only screen and (max-width: 500px) {
@@ -2559,7 +2607,21 @@ input.bad_bid{
          margin-top: 10px;
      }
 
+     .ic-mobile{
+         display: block;
+     }
 
+     .ic-rest{
+         display:none;
+     }
+
+     .see-more{
+         display:none;
+     }
+
+     .supplier-hovered, .buyers-hovered{
+         display:none;
+     }
 
      .category p {
          font-size: 12px !important;
@@ -2572,22 +2634,26 @@ input.bad_bid{
          margin-bottom: 50px;
      }
 
-     .buyers-info i, .suppliers-info i{
+     .suppliers-info{
+         margin-top: 40px;
+     }
+
+     .supplier-icon, .buyer-icon{
         text-align: center;
         font-size: 6em !important;
+    }
+
+    .info-title-line{
+        justify-content: center !important;
     }
 
     .flocknsave-line, .flocknsave-info1 img, #recycleLogo {
         display:none;
     }
 
-    .suppliers-info i{
-        margin-top: -240px;
-    }
-
     .flocknsave-info2{
-        margin-top: 50px;
-        height: 385px;
+        margin-top: 70px;
+        font-size: 1.7em;
     }
 
     .buyers-hovered ul, .supplier-hovered ul{
@@ -2596,33 +2662,37 @@ input.bad_bid{
         margin-top: 50px;
     }
 
-    .request-trial-access{
-        position: absolute !important;
-        left:0;
-        width: 50%;
-    }
-
-    .request-trial-access h2{
-        font-size: 1.2em !important;
-    }
-
-    .request-trial-access h2{
-        font-size: 1.2em !important;
-    }
-
-    .request-trial-access p{
-        font-size: 18px !important;
+    #home3{
+        padding: 0 20px;
     }
 
     #buyerInfo, #supplierInfo{
         width: 50% !important;
         position: absolute !important;
-        right: 0;
+       
     }
 
+    #buyerInfo{
+        left: 56px;
+        top: 240px;
+    }
+
+    #supplierInfo{
+        right: 0;
+        padding-left: 45px;
+        top: 663px;
+    }
     .info {
 
         font-size:15px;
+    }
+
+    .info p{
+        text-align: center !important;
+    }
+
+    .third-line{
+        justify-content: center !important;
     }
 
  }
@@ -2661,4 +2731,51 @@ input.bad_bid{
      #buyerInfo, #supplierInfo, .request-trial-access{
         width: 30%;
      }
+     .flocknsave-line, .flocknsave-info1 img, #recycleLogo {
+        display:none;
+    }
+
+    .ic-mobile{
+        display: block;
+    }
+
+    .ic-rest{
+        display:none;
+    }
+
+    .see-more{
+        display:none;
+    }
+
+    .supplier-hovered, .buyers-hovered{
+        display:none;
+    }
+
+    .buyers-info, .suppliers-info {
+        flex-direction: column;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .suppliers-info{
+        margin-top: 40px;
+    }
+
+    .supplier-icon, .buyer-icon{
+       text-align: center;
+       font-size: 6em !important;
+   }
+
+   .info-title-line{
+       justify-content: center !important;
+   }
+
+   
+    .info p{
+        text-align: center !important;
+    }
+
+    .third-line{
+        justify-content: center !important;
+    }
  }

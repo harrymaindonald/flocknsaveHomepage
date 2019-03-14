@@ -1313,9 +1313,9 @@ $("#calculate_button").click(function(e){
 });
 
 //Homepage bottom reveal info
-
+ 
  $(document).ready(function(){
-    $("#buyerTrial").hover(function(){
+    $("#buyerReveal").hover(function(){
         $("#buyerInfo").fadeTo("5000", "1");
         $("#buyerInfo").css("visibility", "inherit");
         
@@ -1323,7 +1323,7 @@ $("#calculate_button").click(function(e){
         $("#buyerInfo").fadeTo("400", "0");
     });
 
-    $("#supplierTrial").hover(function(){
+    $("#supplierReveal").hover(function(){
         $("#supplierInfo").fadeTo("5000", "1");
         $("#supplierInfo").css("visibility", "inherit");
     }, function(){
@@ -1332,6 +1332,6 @@ $("#calculate_button").click(function(e){
 
 
   });
-
+  
 
 
