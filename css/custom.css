@@ -2699,6 +2699,9 @@ input.bad_bid{
         justify-content: center !important;
     }
 
+    .icon-column{
+        text-align: center;
+    }
  }
 
  @media only screen and (max-width: 813px) and (orientation: landscape){
