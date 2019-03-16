@@ -37,7 +37,7 @@ input[type="button"]:focus {
   color: #000;
 
   border-color: 1px solid rgba(132,210,122,1) ;
-  background-color:rgba(132,210,122,1) !important;
+
   transition: all ease 1.5s;
   outline: 0; }
 .button.button-primary,
