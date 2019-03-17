@@ -1,7 +1,7 @@
 .home-btn{
     border: none !important;
 	font-family: inherit !important;
-	font-size: 18px !important;
+	font-size: 16px !important;
 	cursor: pointer !important;
 	padding: 8px 40px !important;
 	display: inline-block !important;
@@ -596,7 +596,7 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
 
 .category img {
-   max-height: 128px;
+   height: 128px;
 }
 .category p {
     color: #003b4e;
@@ -639,19 +639,21 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     align-items: baseline;
 }
 
-.info-title-line .see-more{
-    margin-left: 20px;
+.third-line .see-more{
+    margin: 0px 10px;
     background: #17954c;
-    padding: 7px 10px;
+    padding: 14px 17px;
+    border: 4px solid #17954c;
     border-radius: 50%;
+}
 
- 
-
+.third-line .see-more:hover{
+    background: transparent;
+    color:#17954c !important;
 }
 
 
-
-.info-title-line .see-more i{
+.third-line .see-more i{
     color:white !important;
 }
 
@@ -670,6 +672,14 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
    
 }
 
+.buyers-info .icon-column i {
+    color: #17954c !important;
+}
+
+.suppliers-info .icon-column i{
+    color: #147398 !important;
+}
+
 .suppliers-info {
     margin-bottom: 50px;
 }
@@ -679,6 +689,9 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     flex-basis: 50%;
     color: #000000;
     font-size:18px;
+    background: rgba(254, 254, 254, 0.2);
+    padding: 0px 20px 36px 20px;
+    border-radius:5px;
 }
 
 
@@ -769,7 +782,8 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
 }
  #buyerInfo{
     position: absolute;
-    right: 10%;    
+    right: 10%;   
+    top: 380px; 
 }
 
  #buyerTitle{
@@ -785,12 +799,17 @@ main #search #seachResults ul li .template-withtabs-content-flexitem3 table a{
     top: 450px;
  }
 
- .suppliers-info .info .info-title-line .see-more{
+ .suppliers-info .info .third-line .see-more{
      background-color: #147398;
-    
+    border: 4px solid #147398;
  }
 
- .suppliers-info .info .info-title-line .see-more i{
+ .suppliers-info .info .third-line .see-more:hover{
+    background-color: transparent;
+   
+}
+
+ .suppliers-info .info .third-line .see-more i{
     color: white !important;
 }
 
@@ -2779,12 +2798,24 @@ input.bad_bid{
 
     .icon-column{
         text-align: center !important;
+        width: auto !important;
+        margin-bottom: 10px;
     }
+    .category img {
+        max-height: 128px;
+        height: auto;
+     }
+
+     .home-btn{
+         font-size: 12px !important;
+     }
+
+
  }
 
  @media only screen and (max-width: 813px) and (orientation: landscape){
     #firstMessage .categories {
-         margin: 0 50px;
+         margin: 20px 0px;
      }
 
      .categories .category {
@@ -2865,5 +2896,10 @@ input.bad_bid{
     }
     .icon-column{
         text-align: center !important;
+        margin-bottom: 10px;
     }
+    .category img {
+        max-height: 128px;
+        height: auto;
+     }
  }

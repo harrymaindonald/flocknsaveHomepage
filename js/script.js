@@ -1318,18 +1318,24 @@ $("#calculate_button").click(function(e){
     $("#buyerReveal").hover(function(){
         $("#buyerInfo").fadeTo("5000", "1");
         $("#buyerInfo").css("visibility", "inherit");
+        $("#buyerRevealIcon").css("cssText", "color: #17954c !important;");
         
     }, function(){
         $("#buyerInfo").fadeTo("400", "0");
+        $("#buyerRevealIcon").css("cssText", "color: white !important;");
     });
 
     $("#supplierReveal").hover(function(){
+        $("#supplierRevealIcon").css("cssText", "color: #147398 !important;");
         $("#supplierInfo").fadeTo("5000", "1");
         $("#supplierInfo").css("visibility", "inherit");
     }, function(){
         $("#supplierInfo").fadeTo("400", "0");
+        $("#supplierRevealIcon").css("cssText", "color: white !important;");
     });
 
+
+   
 
   });
   
