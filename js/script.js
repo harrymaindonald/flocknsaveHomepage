@@ -472,6 +472,7 @@ $(function(){
     });
 
 
+
     /// - -  END
 
 
@@ -1315,7 +1316,17 @@ $("#calculate_button").click(function(e){
 //Homepage bottom reveal info
  
  $(document).ready(function(){
-    $("#buyerReveal").hover(function(){
+     
+$("#landingBuyerReveal").click(function(){
+    $("#buyerUl").toggleClass('showContent');
+    $("#buyersCats").toggleClass('showContent');
+});
+
+$("#landingSupplierReveal").click(function(){
+    $("#supplierUl").toggleClass('showContent');
+    $("#suppliersCats").toggleClass('showContent');
+});
+/*     $("#buyerReveal").hover(function(){
         $("#buyerInfo").fadeTo("5000", "1");
         $("#buyerInfo").css("visibility", "inherit");
         $("#buyerRevealIcon").css("cssText", "color: #17954c !important;");
@@ -1332,12 +1343,79 @@ $("#calculate_button").click(function(e){
     }, function(){
         $("#supplierInfo").fadeTo("400", "0");
         $("#supplierRevealIcon").css("cssText", "color: white !important;");
-    });
-
-
-   
-
+    }); */
   });
-  
 
+
+  //Landing reveal info
+
+
+
+  function scrollDown(target, duration){
+    var target = document.querySelector(target);
+    var targetPosition = target.getBoundingClientRect().top;
+    var startPosition = window.pageYOffset;
+    var distance = targetPosition - startPosition;
+    var startTime = null;
+
+    function animation(currentTime){
+        if(startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if(timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d){
+        t /= d / 2;
+        if(t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+  }
+
+ 
+var moveDownBuyer = document.querySelector('.move-down-btn');
+var moveDownSupplier = document.querySelector('.move-down-btn2');
+
+
+moveDownBuyer.addEventListener('click', function(){
+    scrollDown('#buyerInterest', 1000);
+});
+
+moveDownSupplier.addEventListener('click', function(){
+    scrollDown('#supplierInterest', 1000);
+});
+
+/* var revealBuyerInfo = document.getElementById('landingBuyerReveal');
+var revealSupplierInfo = document.getElementById('landingSupplierReveal');
+var buyerInfo1 = document.getElementById('buyerUl'); 
+var buyerInfo2 = document.getElementById('buyersCats');
+var supplierInfo1 = document.getElementById('supplierUl');
+var supplierInfo2 = document.getElementById('suppliersCats');
+
+
+revealBuyerInfo.addEventListener('click', function(){
+    if(buyerInfo2.style.visibility === "hidden"){
+       buyerInfo1.style.visibility = "visible";
+        buyerInfo2.style.visibility = "visible";
+        
+    } else {
+        buyerInfo1.style.visibility = "hidden";
+        buyerInfo2.style.visibility = "hidden";
+    }
+});
+
+
+revealSupplierInfo.addEventListener('click', function(){
+    if(supplierInfo2.style.visibility === "hidden"){
+        supplierInfo1.style.visibility = "visible";
+        supplierInfo2.style.visibility = "visible";
+    } else {
+        supplierInfo1.style.visibility = "hidden";
+        supplierInfo2.style.visibility = "hidden";
+    }
+}); */
 
